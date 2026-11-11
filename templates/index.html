@@ -1,0 +1,579 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Dionelle P. Alinub, Python Developer building practical business and accounting applications.">
+    <meta name="theme-color" content="#101c36">
+
+    <title>Dionelle P. Alinub | Python Developer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="logo">DIONELLE<span>.</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">My Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="welcome">PYTHON DEVELOPER | BUSINESS SOFTWARE SOLUTIONS</p>
+
+        <h1>Hello, I'm<br><span>Dionelle P. Alinub</span></h1>
+
+        <h2>Python Developer | Business & Accounting Applications</h2>
+
+        <p>
+            I build practical software and web-based tools designed
+            to simplify business operations, records management,
+            cash handling, and everyday workflows. I develop through
+            hands-on projects using Python, Flask, databases, and
+            modern web technologies.
+        </p>
+
+        <p class="hero-subtitle">
+            Open to freelance projects and remote opportunities.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn">Explore My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="{{ url_for('static', filename='Dionelle_Alinub_CV.pdf') }}"
+               class="btn"
+               download>
+                Download My CV
+            </a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <img
+            src="{{ url_for('static', filename='profile.png') }}"
+            alt="Dionelle P. Alinub"
+            class="profile-photo"
+        >
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <p class="section-label">MY STORY</p>
+    <h2>My Learning Journey</h2>
+
+    <div class="about-content">
+        <p>
+            My journey into technology did not begin with an IT degree
+            or a programming background. It started with curiosity
+            and a willingness to learn.
+        </p>
+
+        <p>
+            I started from hands-on work in the cockpit industry,
+            where I gradually developed an interest in computers
+            and technology.
+        </p>
+
+        <p>
+            Through experience and self-learning, I explored computer
+            assembly, hardware troubleshooting, networking, CCTV
+            installation, and technical support.
+        </p>
+
+        <p>
+            Eventually, my curiosity led me to programming. I began
+            learning Python and building practical applications,
+            including management systems and business tools.
+        </p>
+
+        <p>
+            Today, I continue learning software and web development,
+            turning practical ideas into useful digital solutions.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <p class="section-label">WHAT I WORK WITH</p>
+    <h2>Technical Skills & Interests</h2>
+
+    <div class="skills-list">
+        <div class="skill-card">
+            <h3>Python</h3>
+            <p>Programming and application development</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Flask</h3>
+            <p>Web application development</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Website structure and styling</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Interactive web functionality</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>SQLite</h3>
+            <p>Database fundamentals</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tkinter</h3>
+            <p>Desktop GUI applications</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>PC Hardware</h3>
+            <p>Assembly and troubleshooting</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Networking & CCTV</h3>
+            <p>Network setup and camera installation</p>
+        </div>
+    </div>
+
+    <p class="learning-note">
+        Continuously learning through hands-on projects and practical experience.
+    </p>
+</section>
+
+<!-- PROJECT SHOWCASE -->
+<section id="projects" class="section">
+    <p class="section-label">SELECTED WORK</p>
+    <h2>My Software Projects</h2>
+
+    <p class="section-intro">
+        A collection of practical applications and systems
+        developed through hands-on experience and continuous learning.
+        Select a project to explore its features and screenshots.
+    </p>
+
+    <div class="project-showcase">
+
+        <!-- PROJECT 1 -->
+        <details class="showcase-card">
+            <summary class="showcase-summary">
+                <div class="showcase-image">
+                    <img
+                        src="{{ url_for('static', filename='images/projects/machine-betting-controller-dashboard.jpg') }}"
+                        alt="Machine Betting System dashboard preview" loading="lazy"
+                    >
+                    <span class="showcase-number">PROJECT 01</span>
+                </div>
+
+                <div class="showcase-content">
+                    <span class="showcase-category">DESKTOP & WEB APPLICATION</span>
+                    <h3>Machine Betting System</h3>
+
+                    <p>
+                        A LAN-based management application with a
+                        central controller, database, and browser-based
+                        teller interface.
+                    </p>
+
+                    <div class="showcase-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <span class="showcase-action">View Project Details <b>+</b></span>
+                </div>
+            </summary>
+
+            <div class="showcase-details">
+                <div class="project-detail-heading"><span>PROJECT DETAILS</span><strong>Overview & Features</strong></div>
+                <h3>Project Overview</h3>
+                <p>
+                    A LAN-based betting management application designed
+                    around a central controller, local database, and
+                    browser-based teller interface.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Central controller for event and fight management</li>
+                    <li>Multiple teller devices connected over the local network</li>
+                    <li>Live betting workflow with open, close, and odds-freeze stages</li>
+                    <li>Bet records, payout calculations, and event reports</li>
+                </ul>
+
+                <p class="tech">
+                    Technologies: Python · Flask · SQLite · HTML · CSS · JavaScript
+                </p>
+
+                <p class="project-status">Status: Ongoing development</p>
+
+                <h3>Project Screenshots</h3>
+                <div class="portfolio-gallery">
+                    <img src="{{ url_for('static', filename='images/projects/machine-betting-controller-dashboard.jpg') }}" alt="Controller dashboard" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/machine-betting-controller-classic.jpg') }}" alt="Controller interface" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/machine-betting-controller-fight.jpg') }}" alt="Fight management" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/machine-betting-teller.jpg') }}" alt="Teller interface" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/machine-betting-reports.jpg') }}" alt="Reports" loading="lazy">
+                </div>
+            </div>
+        </details>
+
+        <!-- PROJECT 2 -->
+        <details class="showcase-card">
+            <summary class="showcase-summary">
+                <div class="showcase-image">
+                    <img
+                        src="{{ url_for('static', filename='images/projects/smart-barangay-dashboard.jpg') }}"
+                        alt="Smart Barangay Management System dashboard preview" loading="lazy"
+                    >
+                    <span class="showcase-number">PROJECT 02</span>
+                </div>
+
+                <div class="showcase-content">
+                    <span class="showcase-category">WEB-BASED MANAGEMENT SYSTEM</span>
+                    <h3>M.D. Smart Barangay Management System</h3>
+
+                    <p>
+                        A barangay management platform for organizing
+                        community records and supporting administrative
+                        and disaster-response operations.
+                    </p>
+
+                    <div class="showcase-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <span class="showcase-action">View Project Details <b>+</b></span>
+                </div>
+            </summary>
+
+            <div class="showcase-details">
+                <div class="project-detail-heading"><span>PROJECT DETAILS</span><strong>Overview & Features</strong></div>
+                <h3>Project Overview</h3>
+                <p>
+                    A barangay-focused management platform intended
+                    to organize community records and support day-to-day
+                    administrative and disaster-response work.
+                </p>
+
+                <h3>Key Modules</h3>
+                <ul>
+                    <li>Resident and household records</li>
+                    <li>Complaints, blotter, and incident management</li>
+                    <li>Document requests and certificate processing</li>
+                    <li>Reports, announcements, and barangay profile settings</li>
+                    <li>Disaster incidents, evacuation, and response management</li>
+                </ul>
+
+                <p>
+                    <strong>Development approach:</strong>
+                    Local-first operation with a planned hybrid model
+                    for authorized remote access and future cloud synchronization.
+                </p>
+
+                <p class="tech">
+                    Technologies: Python · Flask · SQLite · HTML · CSS · JavaScript · Leaflet / OpenStreetMap
+                </p>
+
+                <p class="project-status">Status: Ongoing development</p>
+
+                <h3>Project Screenshots</h3>
+                <div class="portfolio-gallery">
+                    <img src="{{ url_for('static', filename='images/projects/smart-barangay-dashboard.jpg') }}" alt="Dashboard" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/smart-barangay-reports.jpg') }}" alt="Reports" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/smart-barangay-profile-settings.jpg') }}" alt="Profile settings" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/smart-barangay-clearance.jpg') }}" alt="Clearance" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/smart-barangay-blotter.jpg') }}" alt="Blotter" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/smart-barangay-disaster.jpg') }}" alt="Disaster response" loading="lazy">
+                </div>
+            </div>
+        </details>
+
+        <!-- PROJECT 3 -->
+        <details class="showcase-card">
+            <summary class="showcase-summary">
+                <div class="showcase-image">
+                    <img
+                        src="{{ url_for('static', filename='images/projects/cash-counting-dashboard.jpg') }}"
+                        alt="Cash Counting System dashboard preview" loading="lazy"
+                    >
+                    <span class="showcase-number">PROJECT 03</span>
+                </div>
+
+                <div class="showcase-content">
+                    <span class="showcase-category">DESKTOP APPLICATION</span>
+                    <h3>M.D. Cash Counting System</h3>
+
+                    <p>
+                        A desktop tool for organizing cash transactions,
+                        monitoring teller balances, and managing
+                        financial summaries.
+                    </p>
+
+                    <div class="showcase-tech">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                    </div>
+
+                    <span class="showcase-action">View Project Details <b>+</b></span>
+                </div>
+            </summary>
+
+            <div class="showcase-details">
+                <div class="project-detail-heading"><span>PROJECT DETAILS</span><strong>Overview & Features</strong></div>
+                <h3>Project Overview</h3>
+                <p>
+                    A desktop tool for organizing cash transactions
+                    and monitoring teller balances through a
+                    centralized workflow.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Teller cash monitoring and summaries</li>
+                    <li>Common fund tracking</li>
+                    <li>Cash reconciliation and balancing</li>
+                    <li>Income statement and operational reports</li>
+                </ul>
+
+                <p class="tech">Technologies: Python · Tkinter</p>
+
+                <p class="project-status">
+                    Status: Developed as a desktop application
+                </p>
+
+                <h3>Project Screenshots</h3>
+                <div class="portfolio-gallery">
+                    <img src="{{ url_for('static', filename='images/projects/cash-counting-dashboard.jpg') }}" alt="Dashboard" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/cash-counting-tellers.jpg') }}" alt="Tellers" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/cash-counting-common-fund.jpg') }}" alt="Common fund" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/cash-counting-reconciliation.jpg') }}" alt="Reconciliation" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/cash-counting-balancing.jpg') }}" alt="Balancing" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/cash-counting-income-statement.jpg') }}" alt="Income statement" loading="lazy">
+                </div>
+            </div>
+        </details>
+
+        <!-- PROJECT 4 -->
+        <details class="showcase-card">
+            <summary class="showcase-summary">
+                <div class="showcase-image">
+                    <img
+                        src="{{ url_for('static', filename='images/projects/matching-system-dashboard.jpg') }}"
+                        alt="Matching System dashboard preview" loading="lazy"
+                    >
+                    <span class="showcase-number">PROJECT 04</span>
+                </div>
+
+                <div class="showcase-content">
+                    <span class="showcase-category">DESKTOP APPLICATION</span>
+                    <h3>M.D. Matching System 2.0</h3>
+
+                    <p>
+                        A desktop management application for event
+                        registration, automated matching, and
+                        match schedule generation.
+                    </p>
+
+                    <div class="showcase-tech">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Optimization</span>
+                    </div>
+
+                    <span class="showcase-action">View Project Details <b>+</b></span>
+                </div>
+            </summary>
+
+            <div class="showcase-details">
+                <div class="project-detail-heading"><span>PROJECT DETAILS</span><strong>Overview & Features</strong></div>
+                <h3>Project Overview</h3>
+                <p>
+                    A desktop management application for organizing
+                    event entries and generating match schedules
+                    using automated matching logic.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Event setup and entry registration</li>
+                    <li>Automated participant matching</li>
+                    <li>Fight schedule generation</li>
+                    <li>Match result recording and scoring</li>
+                </ul>
+
+                <p class="tech">
+                    Technologies: Python · Tkinter · Optimization algorithms
+                </p>
+
+                <p class="project-status">
+                    Status: Developed and iteratively improved
+                </p>
+
+                <h3>Project Screenshots</h3>
+                <div class="portfolio-gallery">
+                    <img src="{{ url_for('static', filename='images/projects/matching-system-dashboard.jpg') }}" alt="Dashboard" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/matching-system-registration.jpg') }}" alt="Registration" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/matching-system-entries.jpg') }}" alt="Entries" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/matching-system-schedule.jpg') }}" alt="Schedule" loading="lazy">
+                    <img src="{{ url_for('static', filename='images/projects/matching-system-scoring.jpg') }}" alt="Scoring" loading="lazy">
+                </div>
+            </div>
+        </details>
+
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+    <p class="section-label">CONTINUOUS LEARNING</p>
+    <h2>Certifications & Professional Development</h2>
+
+    <p class="section-intro">
+        Click a certificate to view the actual image.
+    </p>
+
+    <div class="project-accordion">
+
+        <details class="portfolio-item">
+            <summary>01. Accounting & Bookkeeping Masterclass</summary>
+            <p>Beginner to Advanced · Udemy · Irfan Sharif ACA ACCA</p>
+
+            <div class="portfolio-gallery certificate-gallery">
+                <img
+                    src="{{ url_for('static', filename='images/certificates/accounting-bookkeeping-masterclass.jpg') }}"
+                    alt="Accounting and Bookkeeping certificate"
+                >
+            </div>
+        </details>
+
+        <details class="portfolio-item">
+            <summary>02. Mastering QuickBooks Online</summary>
+            <p>Udemy · Mark Smolen</p>
+
+            <div class="portfolio-gallery certificate-gallery">
+                <img
+                    src="{{ url_for('static', filename='images/certificates/quickbooks-online.png') }}"
+                    alt="QuickBooks Online certificate"
+                >
+            </div>
+        </details>
+
+        <details class="portfolio-item">
+            <summary>03. Xero Accounting – Learn Xero in a Day!</summary>
+            <p>Udemy · Chris Rollinson</p>
+
+            <div class="portfolio-gallery certificate-gallery">
+                <img
+                    src="{{ url_for('static', filename='images/certificates/xero-accounting.png') }}"
+                    alt="Xero Accounting certificate"
+                >
+            </div>
+        </details>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <p class="section-label">GET IN TOUCH</p>
+    <h2>Let's Work Together</h2>
+
+    <p class="section-intro">
+        Have a project in mind, need a website, or looking for
+        a practical software solution? Feel free to contact me.
+    </p>
+
+    <div class="contact-grid">
+
+        <a href="mailto:dionelle.alinsub86@gmail.com" class="contact-card">
+            <span class="contact-icon">✉</span>
+            <h3>Email</h3>
+            <p>dionelle.alinsub86@gmail.com</p>
+        </a>
+
+        <a
+            href="https://www.facebook.com/search/top?q=Dionelle%20Alinsub"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+        >
+            <span class="contact-icon">f</span>
+            <h3>Facebook</h3>
+            <p>Dionelle Alinsub</p>
+        </a>
+
+        <a href="tel:+639106888122" class="contact-card">
+            <span class="contact-icon">☎</span>
+            <h3>Mobile</h3>
+            <p>+639106888122</p>
+        </a>
+
+        <a
+            href="https://wa.me/639106888122"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+        >
+            <span class="contact-icon">◉</span>
+            <h3>WhatsApp</h3>
+            <p>+639106888122</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 Dionelle P. Alinub.
+        Built with continuous learning and passion.
+    </p>
+</footer>
+
+<!-- IMAGE LIGHTBOX -->
+<div
+    class="image-lightbox"
+    id="imageLightbox"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Expanded portfolio image"
+>
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">&#10094;</button>
+
+    <figure class="lightbox-figure">
+        <img id="lightboxImage" src="" alt="">
+        <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&#10095;</button>
+
+    <p class="lightbox-hint">Click outside the image or press Esc to close</p>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
