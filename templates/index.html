@@ -23,6 +23,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#certifications">Certificates</a>
+        <a href="#cv">My CVs</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -51,9 +52,7 @@
         <div class="hero-actions">
             <a href="#projects" class="btn">Explore My Projects</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
-            <a href="{{ url_for('static', filename='Dionelle_Alinsub_CV.pdf') }}"
-               class="btn"
-               download>
+            <a href="#cv" class="btn">
                 Download My CV
             </a>
         </div>
@@ -490,6 +489,42 @@
             </div>
         </details>
 
+    </div>
+</section>
+
+<!-- CV DOWNLOADS -->
+<section id="cv" class="section">
+    <p class="section-label">CAREER DOCUMENTS</p>
+    <h2>Download My CV</h2>
+
+    <p class="section-intro">
+        Choose the version that best matches the opportunity you are exploring.
+    </p>
+
+    <div class="skills-list">
+        <div class="skill-card">
+            <h3>Master CV</h3>
+            <p>My complete professional background, work experience, education, and technical skills.</p>
+            <a class="btn" href="{{ url_for('static', filename='Dionelle_P_Alinsub_Master_CV_FINAL.pdf') }}" download>
+                Download Master CV
+            </a>
+        </div>
+
+        <div class="skill-card">
+            <h3>Python Developer / IT Support</h3>
+            <p>Focused on Python projects, application development, PC troubleshooting, CCTV, and networking.</p>
+            <a class="btn" href="{{ url_for('static', filename='Dionelle_P_Alinsub_Python_IT_CV_FINAL.pdf') }}" download>
+                Download Python / IT CV
+            </a>
+        </div>
+
+        <div class="skill-card">
+            <h3>Accounting / Bookkeeping</h3>
+            <p>Focused on accounting assistance, payroll data entry, administration, and bookkeeping training.</p>
+            <a class="btn" href="{{ url_for('static', filename='Dionelle_P_Alinsub_Accounting_Bookkeeping_CV_FINAL.pdf') }}" download>
+                Download Accounting CV
+            </a>
+        </div>
     </div>
 </section>
 
